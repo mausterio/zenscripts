@@ -37,20 +37,20 @@ var bill_hundred_dollar = <modcurrency:banknote:5>;
 // The idea is to allow currency to drop on mobs that aren't easily mass-farmed
 // TODO: Add drop chances as well as min-max amounts
 
-	var troll = <entity:primitivemobs:trollager>;
+	var troll = <entity:primitivemobs:trollager>;  // Requires Primitive Mobs
 		troll.addPlayerOnlyDrop(bill_one_dollar);
 		troll.addPlayerOnlyDrop(bill_five_dollar);
 		troll.addPlayerOnlyDrop(bill_ten_dollar);
 		
-	var goblin = <entity:primitivemobs:goblin>;
+	var goblin = <entity:primitivemobs:goblin>; // Requires Primitive Mobs
 		goblin.addPlayerOnlyDrop(coin_nickle);
 		goblin.addPlayerOnlyDrop(coin_penny);
 		
-	var merchant = <entity:primitivemobs:traveling_merchant>;
+	var merchant = <entity:primitivemobs:traveling_merchant>; // Requires Primitive Mobs
 		merchant.addPlayerOnlyDrop(bill_one_dollar);
 		merchant.addPlayerOnlyDrop(bill_five_dollar);
 		
-	var sheepman = <entity:primitivemobs:sheepman>; 
+	var sheepman = <entity:primitivemobs:sheepman>; // Requires Primitive Mobs
 		sheepman.addPlayerOnlyDrop(coin_nickle);
 		sheepman.addPlayerOnlyDrop(coin_penny);
 		
