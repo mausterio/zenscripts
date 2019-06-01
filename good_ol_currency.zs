@@ -1,12 +1,11 @@
-// This script allows for players to generate good ol currency while playing.
-// The goal is to incentivize players to passively accumulate currency that 
-// may be used for player to player trading, while being restrictive enough to
-// prevent rapid devaluation of currency.
-
 // Author: Tim Vitale (Mausterio)
 // Used on the GoodGangSociety ATM 3: Remix Server, goodgangsociety.com:25595
 // License: MIT - https://github.com/mausterio/zenscripts/blob/master/LICENSE
 
+// This script allows for players to generate good ol currency while playing.
+// The goal is to incentivize players to passively accumulate currency that 
+// may be used for player to player trading, while being restrictive enough to
+// prevent rapid devaluation of currency.
 
 // Messy imports, need to be cleaned up once script is completed.
 import crafttweaker.event.EntityLivingDeathDropsEvent;
@@ -43,20 +42,20 @@ var bill_hundred_dollar = <modcurrency:banknote:5>;
 		troll.addPlayerOnlyDrop(bill_ten_dollar, 1, 1, 0.30);
 		
 	var goblin = <entity:primitivemobs:goblin>; // Requires Primitive Mobs
-		goblin.addPlayerOnlyDrop(coin_nickle, 0.30);
-		goblin.addPlayerOnlyDrop(coin_penny, 0.60);
+		goblin.addPlayerOnlyDrop(coin_nickle, 1, 1, 0.30);
+		goblin.addPlayerOnlyDrop(coin_penny, 1, 4, 0.60);
 		
 	var merchant = <entity:primitivemobs:traveling_merchant>; // Requires Primitive Mobs
-		merchant.addPlayerOnlyDrop(bill_one_dollar, 0.50);
-		merchant.addPlayerOnlyDrop(bill_five_dollar, 0.30);
+		merchant.addPlayerOnlyDrop(bill_one_dollar, 1, 4, 0.50);
+		merchant.addPlayerOnlyDrop(bill_five_dollar, 1, 1 0.30);
 		
 	var sheepman = <entity:primitivemobs:sheepman>; // Requires Primitive Mobs
-		sheepman.addPlayerOnlyDrop(coin_nickle, 0.30);
-		sheepman.addPlayerOnlyDrop(coin_penny, 0.60);
-		 
+		sheepman.addPlayerOnlyDrop(coin_nickle, 1, 1, 0.30);
+		sheepman.addPlayerOnlyDrop(coin_penny, 1, 4, 0.60);
+		
 		
 // Add recipes for crafting
 // Disclaimer: These wont show up clientside in mods like JEI unless the client also has this script
 	furnace.addRecipe(coin_penny, <ore:plateCopper>); // Requires Thermal Foundation
-	furnace.addRecipe(coin_quarter, <ore:plateAdvancedAlloy>); // 
-	furnace.addRecipe(coin_two_dollar, <ore:plateIridiumAlloy>);
+	furnace.addRecipe(coin_quarter, <ore:plateAdvancedAlloy>); // Requires Industrial Craft 2
+	furnace.addRecipe(coin_two_dollar, <ore:plateIridiumAlloy>); // Requires Industrial Craft 2
