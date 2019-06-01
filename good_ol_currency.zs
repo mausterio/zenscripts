@@ -34,25 +34,25 @@ var bill_fifty_dollar = <modcurrency:banknote:4>;
 var bill_hundred_dollar = <modcurrency:banknote:5>;
 
 // Add money drops to mobs
-// The idea is to allow currency to drop on mobs that aren't easily mass-farmed
+// The idea is to allow currency to drop on mobs that arent easily mass-farmed
 // TODO: Add drop chances as well as min-max amounts
 
 	var troll = <entity:primitivemobs:trollager>;  // Requires Primitive Mobs
-		troll.addPlayerOnlyDrop(bill_one_dollar);
-		troll.addPlayerOnlyDrop(bill_five_dollar);
-		troll.addPlayerOnlyDrop(bill_ten_dollar);
+		troll.addPlayerOnlyDrop(bill_one_dollar, 1, 4, 0.30);
+		troll.addPlayerOnlyDrop(bill_five_dollar, 1, 1, 0.30);
+		troll.addPlayerOnlyDrop(bill_ten_dollar, 1, 1, 0.30);
 		
 	var goblin = <entity:primitivemobs:goblin>; // Requires Primitive Mobs
-		goblin.addPlayerOnlyDrop(coin_nickle);
-		goblin.addPlayerOnlyDrop(coin_penny);
+		goblin.addPlayerOnlyDrop(coin_nickle, 0.30);
+		goblin.addPlayerOnlyDrop(coin_penny, 0.60);
 		
 	var merchant = <entity:primitivemobs:traveling_merchant>; // Requires Primitive Mobs
-		merchant.addPlayerOnlyDrop(bill_one_dollar);
-		merchant.addPlayerOnlyDrop(bill_five_dollar);
+		merchant.addPlayerOnlyDrop(bill_one_dollar, 0.50);
+		merchant.addPlayerOnlyDrop(bill_five_dollar, 0.30);
 		
 	var sheepman = <entity:primitivemobs:sheepman>; // Requires Primitive Mobs
-		sheepman.addPlayerOnlyDrop(coin_nickle);
-		sheepman.addPlayerOnlyDrop(coin_penny);
+		sheepman.addPlayerOnlyDrop(coin_nickle, 0.30);
+		sheepman.addPlayerOnlyDrop(coin_penny, 0.60);
 		
 		
 // Add recipes for crafting
