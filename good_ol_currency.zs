@@ -47,7 +47,7 @@ var bill_hundred_dollar = <modcurrency:banknote:5>;
 		
 	var merchant = <entity:primitivemobs:traveling_merchant>; // Requires Primitive Mobs
 		merchant.addPlayerOnlyDrop(bill_one_dollar, 1, 4, 0.50);
-		merchant.addPlayerOnlyDrop(bill_five_dollar, 1, 1 0.30);
+		merchant.addPlayerOnlyDrop(bill_five_dollar, 1, 1, 0.30);
 		
 	var sheepman = <entity:primitivemobs:sheepman>; // Requires Primitive Mobs
 		sheepman.addPlayerOnlyDrop(coin_nickle, 1, 1, 0.30);
