@@ -53,7 +53,7 @@ var bill_hundred_dollar = <modcurrency:banknote:5>;
 	var sheepman = <entity:primitivemobs:sheepman>; // Requires Primitive Mobs
 		sheepman.addPlayerOnlyDrop(coin_nickle, 0.30);
 		sheepman.addPlayerOnlyDrop(coin_penny, 0.60);
-		
+		 
 		
 // Add recipes for crafting
 // Disclaimer: These wont show up clientside in mods like JEI unless the client also has this script
