@@ -27,7 +27,7 @@ var coin_two_dollar = <modcurrency:coin:5>;
 // Declares bills
 var bill_one_dollar = <modcurrency:banknote:0>;
 var bill_five_dollar = <modcurrency:banknote:1>;
-var bill_ten_dollar = <modcurrency:banknote:2>;500
+var bill_ten_dollar = <modcurrency:banknote:2>;
 var bill_twenty_dollar = <modcurrency:banknote:3>;
 var bill_fifty_dollar = <modcurrency:banknote:4>;
 var bill_hundred_dollar = <modcurrency:banknote:5>;
